@@ -1,0 +1,73 @@
+{
+  "name": "education",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Vitaly Pereslavtsev <dev@pereslavtsev.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "tsc",
+    "lint": "eslint . --ext .js,.ts,.tsx"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.24",
+    "@types/react": "^16.9.35",
+    "@types/react-dom": "^16.9.8",
+    "@typescript-eslint/eslint-plugin": "^4.15.1",
+    "@typescript-eslint/parser": "^4.15.1",
+    "css-loader": "^5.2.6",
+    "eslint": "^7.20.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.22.0",
+    "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^5.3.0",
+    "husky": "4.3.8",
+    "jest": "^27.0.6",
+    "lint-staged": "^10.5.4",
+    "mini-css-extract-plugin": "^0.9.0",
+    "prettier": "^2.2.1",
+    "source-map-loader": "^0.2.4",
+    "ts-import-plugin": "^1.6.6",
+    "ts-jest": "^27.0.3",
+    "ts-loader": "^7.0.4",
+    "typescript": "^4.3.5",
+    "url-loader": "^4.1.0",
+    "webpack": "^5.39.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "@reduxjs/toolkit": "^1.6.0",
+    "@testing-library/react": "^12.0.0",
+    "@types/react-router": "^5.1.16",
+    "@types/react-router-dom": "^5.1.8",
+    "firebase": "^8.7.1",
+    "formik": "^2.2.9",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.4",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^4.0.3",
+    "redux": "^4.1.0",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-persist": "^6.0.0",
+    "redux-saga": "^1.1.3",
+    "sass": "^1.35.1",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^2.0.0",
+    "yup": "^0.32.9"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": [
+      "eslint --fix"
+    ]
+  }
+}

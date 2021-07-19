@@ -1,0 +1,74 @@
+body
+  background-color: #FFC65EDB
+.container
+  display: flex
+  min-height: 30vh
+  margin-top: 30px
+  flex-flow: column
+  vertical-align: middle
+  justify-content: center
+  h1
+    text-align: center
+  .dialogs
+    display: flex
+    flex-direction: column
+    width: 15%
+    .search-area
+      display: flex
+      flex-direction: column
+      div
+        p
+          overflow-wrap: break-word
+    .child
+      background-color: wheat
+      display: flex
+      flex-direction: column
+      border-radius: 6px
+      padding: 25px
+  form
+    align-items: center
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    .item
+      display: flex
+      flex-direction: column
+      div
+        display: flex
+        align-items: center
+        label
+          display: flex
+          width: 20vw
+          font-size: 20px
+        input
+          width: 40vw
+          border: darkgrey 1px solid
+          border-radius: 5px
+          height: 38px
+      .empty-div
+        flex-grow: 6
+        height: 28px
+      .bg-danger
+        margin: 0
+        height: 26px
+        padding: 2px 0 0 5px
+        border-radius: 5px
+        background-color: red
+        color: white
+  button
+    width: 60vw
+    background-color: white
+    font-size: 20px
+    border: darkgrey 1px solid
+    border-radius: 3px
+    &:hover
+      background-color: #dcdcdc
+  .authErrors
+    width: 60.2%
+    margin: 0
+    height: 26px
+    padding: 2px 0 0 5px
+    border-radius: 5px
+    background-color: red
+    color: white
+
